@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AngajatiLoader extends AplicantiLoader{
+public class AngajatiLoader extends AplicantiLoader {
     @Override
     public List<Aplicant> load(String file) throws FileNotFoundException {
         Scanner input2 = new Scanner(new File(file));
@@ -18,7 +18,7 @@ public class AngajatiLoader extends AplicantiLoader{
 
         while (input2.hasNext()) {
             Angajat angajat = new Angajat();
-            super.loadApplicationData(input2, angajat);
+            super.loadApplicantData(input2, angajat);
             int salariu = input2.nextInt();
             String ocupatie = input2.next();
             angajat.setSalariu(salariu);

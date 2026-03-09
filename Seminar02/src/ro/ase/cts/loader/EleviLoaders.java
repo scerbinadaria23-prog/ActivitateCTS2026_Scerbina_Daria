@@ -18,12 +18,12 @@ public class EleviLoaders extends AplicantiLoader {
 
         while (input2.hasNext()) {
             Elev elev = new Elev();
-            super.loadApplicationData(input2, elev);
+            super.loadApplicantData(input2, elev);
             int clasa = input2.nextInt();
             String tutore = input2.next();
-
-            Elev e = new Elev(nume, prenume, varsta, punctaj, nr, vect, clasa, tutore);
-            elevi.add(e);
+            elev.setClasa(clasa);
+            elev.setTutore(tutore);
+            elevi.add(elev);
         }
 
         input2.close();

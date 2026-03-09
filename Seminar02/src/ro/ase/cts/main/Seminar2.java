@@ -16,8 +16,11 @@ public class Seminar2 {
 		AplicantiLoader loader = new AngajatiLoader();
 		try {
 			listaAngajati = loader.load("angajati.txt");
-			for(Aplicant angajat:listaAngajati)
+			for(Aplicant angajat:listaAngajati) {
 				System.out.println(angajat.toString());
+				angajat.afisareFinantare();
+				angajat.afisareStatut();
+			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
