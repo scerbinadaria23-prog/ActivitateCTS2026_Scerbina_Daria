@@ -1,4 +1,4 @@
-package ro.ase.cts.lazy;
+astapackage ro.ase.cts.lazy;
 
 public class Hotel {
     private String denumireHotel;
